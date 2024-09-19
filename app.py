@@ -57,7 +57,7 @@ values = st.slider('Selecciona el rango de valores',0.0, 100.0)
 st.write('Values:', values)
 
 if st.button('Enviar valor analógico'):
-    client1= paho.Client("GIT-HUB")                           
+    client1= paho.Client("holabotonclienteaaa")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)   
     message =json.dumps({"Analog": float(values)})
