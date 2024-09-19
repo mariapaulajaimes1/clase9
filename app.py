@@ -29,7 +29,7 @@ st.title("MQTT Control")
 
 if st.button('ON'):
     act1="ON"
-    client1= paho.Client("holabotoncliente")                           
+    client1= paho.Client("holabotonclienteaaa")                           
     client1.on_publish = on_publish                          
     client1.connect(broker,port)  
     message =json.dumps({"Act1":act1})
